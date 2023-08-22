@@ -250,10 +250,7 @@ def make_request(gas, query, customer_id, config=None):
     if config is None:
         config = {}
     request_timeout = get_request_timeout(config)
-    response = gas.search(
-        request=dict(customer_id=customer_id, query=query),
-        # timeout=request_timeout,
-    )
+    response = gas.search(query=query, customer_id=customer_id, timeout=request_timeout)
     return response
 
 
