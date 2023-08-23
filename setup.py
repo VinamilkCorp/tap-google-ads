@@ -13,7 +13,7 @@ setup(
     install_requires=[
         "singer-python==5.13.0",
         "requests==2.26.0",
-        "backoff==1.8.0",
+        "backoff>=1.11.1",
         "google-ads==21.3.0",
         "protobuf==4.22.3",
         # Necessary to handle gRPC exceptions properly, documented
